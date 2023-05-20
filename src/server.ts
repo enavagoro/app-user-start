@@ -22,7 +22,7 @@ class Server {
         this.app.set('port', process.env.PORT || this.port);
         this.initCors();
         this.app.use(express.json());
-        // Start Db
+        // Start BD
         const mongoDb = new Database();
         mongoDb.startConnection();
     }
